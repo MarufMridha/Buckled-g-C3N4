@@ -1,0 +1,23 @@
+Global Parameters
+LREAL  = .FALSE.       (Projection operators: automatic)
+ENCUT  =  500        (Cut-off energy for plane wave basis set, in eV)
+PREC   =  Accurate   (Precision level: Normal or Accurate, set Accurate when perform structure lattice relaxation calculation)
+LWAVE  = .FALSE.        (Write WAVECAR or not)
+LCHARG = .FALSE.        (Write CHGCAR or not)
+ADDGRID= .TRUE.        (Increase grid, helps GGA convergence)
+ 
+Electronic Relaxation
+ISMEAR =  0           (Gaussian smearing, metals:1)
+SIGMA  =  0.05         (Smearing value in eV, metals:0.2)
+NELM   =  90           (Max electronic SCF steps)
+NELMIN =  6            (Min electronic SCF steps)
+EDIFF  =  1E-08        (SCF energy convergence, in eV)
+ 
+Ionic Relaxation
+NSW    =  1000          (Max ionic steps)
+IBRION =  1            (Algorithm: 0-MD, 1-Quasi-New, 2-CG)
+ISIF   =  3            (Stress/relaxation: 2-Ions, 3-Shape/Ions/V, 4-Shape/Ions)
+EDIFFG = -1E-03        (Ionic convergence, eV/AA)
+IVDW = 11 
+NCORE  = 14
+KPAR   = 14
